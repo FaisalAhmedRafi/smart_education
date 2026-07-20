@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  h1,
+  h2,
+  h3 {
+    font-family: var(--font-fraunces), serif;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply inline-flex items-center justify-center rounded-sm px-4 py-2 text-sm font-medium tracking-wide transition-colors disabled:opacity-50 disabled:cursor-not-allowed;
+  }
+  .btn-primary {
+    @apply btn bg-indigo text-paper hover:bg-indigo-dark;
+  }
+  .btn-secondary {
+    @apply btn bg-transparent border border-indigo/30 text-indigo hover:bg-indigo/5;
+  }
+  .btn-danger {
+    @apply btn bg-rust text-paper hover:opacity-90;
+  }
+
+  .input {
+    @apply w-full rounded-sm border border-line bg-white px-3 py-2 text-sm text-ink placeholder:text-ink/40 focus:outline-none focus:ring-2 focus:ring-brass/50 focus:border-brass;
+  }
+
+  .card {
+    @apply bg-white border border-line rounded-sm;
+  }
+
+  .stamp {
+    @apply inline-flex items-center justify-center rounded-full border px-2.5 py-0.5 text-[10px] font-mono font-medium tracking-widest uppercase;
+  }
+  .stamp-admin {
+    @apply stamp border-brass text-brass;
+  }
+  .stamp-teacher {
+    @apply stamp border-indigo text-indigo;
+  }
+  .stamp-student {
+    @apply stamp border-sage text-sage;
+  }
+
+  .status-present {
+    @apply text-sage;
+  }
+  .status-absent {
+    @apply text-rust;
+  }
+  .status-late {
+    @apply text-brass;
+  }
+  .status-excused {
+    @apply text-indigo-light;
+  }
+}
