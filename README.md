@@ -6,6 +6,10 @@ with role-based access for admins, teachers, and students.
 Built as a full-stack project: a NestJS + PostgreSQL API and a Next.js
 dashboard that talks to it.
 
+![Login screen](./docs/screenshots/login.png)
+
+*Sign-in screen, styled like a school ledger — sections for admin, teacher, and student access.*
+
 ## Features
 
 - **Auth** — JWT-based login, roles: `admin`, `teacher`, `student`
@@ -88,6 +92,15 @@ There's no seeded admin — the first one is created through the app:
 | **admin** | everything — manage users, classes, students, attendance, grades |
 | **teacher** | mark attendance, record grades, view classes/students |
 | **student** | view their own attendance and grades only |
+
+## Screenshots
+
+| | |
+|---|---|
+| ![Dashboard overview](./docs/screenshots/dashboard.png) | ![Attendance](./docs/screenshots/attendance.png) |
+| Role-aware dashboard overview | Marking attendance for a class |
+| ![Grades](./docs/screenshots/grades.png) | |
+| Recording and reviewing grades | |
 
 ## Where things stand
 
