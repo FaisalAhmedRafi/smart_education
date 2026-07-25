@@ -62,6 +62,8 @@ A "school ledger" visual language: warm paper background, slate-navy sidebar,
 brass accent, Fraunces for headings, Inter for UI text, IBM Plex Mono for
 roll numbers/dates/data. Role badges are styled like small stamps.
 
+![Dashboard](../docs/screenshots/dashboard.png)
+
 ## What's next
 
 - The backend README already flags moving off `synchronize: true` before
